@@ -1,0 +1,20 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Главня страница
+    body
+        include modules/main_header.pug
+        section.events 
+            .wrapper
+                h1 ПРЕДСТОЯЩИЕ МЕРОПРИЯТИЯ
+                span.decrp Предстоящие события или мероприятия в нашем центре.
+        section.events 
+            .wrapper
+                h1 ВСЕ РАЗВЛЕЧЕНИЯ И ЦЕНЫ
+        section.events 
+            .wrapper
+                h1 ПОЛЕЗНАЯ ИНФОРМАЦИЯ
+        include modules/footer.pug
+
