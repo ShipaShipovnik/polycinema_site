@@ -4,18 +4,93 @@ html(lang="ru")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="../styles/styles.css")
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         title Главня страница
     body
-        include modules/main_header.pug
-        section.events 
+        header 
+            .main-banner-wrap
+                .wrapper 
+                    .main-banner
+                        .main-banner__header 
+                            p Москва
+                            a(href='index.html')
+                                img.logo(src="../img/logo2.png", alt="logo")
+                            p(id="numb") +7 (499) 638 22 65
+                        p(id="descrp") Полисинема —один из самых масштабных культурно-развлекательных центров в Москве.Lorem lorem lorem lorem Lorem lorem lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem lorem lorem Lorem lorem lorem lorem lorem lorem lorem Lorem lorem lorem lorem 
+            .main-menu-wrap
+                .wrapper 
+                    nav.main-menu
+                        li 
+                            a(href="about.html") О нас
+                        li 
+                            a(href="#events") Мероприятия 
+                        li 
+                            a(href="#pricing") Цены 
+                        li 
+                            a(href="information.html") Частые вопросы 
+                        li 
+                            a(href="about.html") Контакты 
+        section.events-wrapper
             .wrapper
-                h1 ПРЕДСТОЯЩИЕ МЕРОПРИЯТИЯ
-                span.decrp Предстоящие события или мероприятия в нашем центре.
-        section.events 
+                h1(id="events") ПРЕДСТОЯЩИЕ МЕРОПРИЯТИЯ
+                p.descrp Предстоящие события или мероприятия в нашем центре.
+                <div id="demo" class="carousel slide events-slider" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="../img/afisha1.png" alt="Los Angeles" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="../img/afisha1.png" alt="Chicago" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="../img/afisha1.png" alt="New York" class="d-block w-100">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+        section.pricing-wrapper
             .wrapper
-                h1 ВСЕ РАЗВЛЕЧЕНИЯ И ЦЕНЫ
-        section.events 
+                h1(id="pricing") ВСЕ РАЗВЛЕЧЕНИЯ И ЦЕНЫ
+                //- <ul class="nav nav-pills nav-fill">
+                //-     <li class="nav-item">
+                //-         <a class="nav-link active" aria-current="page" href="#">Active</a>
+                //-     </li>
+                //-     <li class="nav-item">
+                //-         <a class="nav-link" href="#">Much longer nav link</a>
+                //-     </li>
+                //-     <li class="nav-item">
+                //-         <a class="nav-link" href="#">Link</a>
+                //-     </li>
+                //-     <li class="nav-item">
+                //-         <a class="nav-link disabled" href="#" tabindex="-1">Disabled</a>
+                //-     </li>
+                //- </ul>
+        section.handy-info-wrapper
             .wrapper
-                h1 ПОЛЕЗНАЯ ИНФОРМАЦИЯ
+                h1(id="handyinfo") ПОЛЕЗНАЯ ИНФОРМАЦИЯ
+                .handy-info_info-circles
+                    .handy-info__circle-block
+                        a(href='about.html')
+                            img(src="../img/info_circle_1.png", alt="circle1")
+                            p Схема проезда
+                    .handy-info__circle-block
+                        a(href='about.html')
+                            img(src="../img/info_circle_2.png", alt="circle1")
+                            p Частые вопросы
+                    .handy-info__circle-block
+                        a(href='about.html')
+                            img(src="../img/info_circle_3.png", alt="circle1")
+                            p О нас
         include modules/footer.pug
 
