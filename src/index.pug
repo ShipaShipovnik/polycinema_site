@@ -62,22 +62,84 @@ html(lang="ru")
         section.pricing-wrapper
             .wrapper
                 h1(id="pricing") ВСЕ РАЗВЛЕЧЕНИЯ И ЦЕНЫ
-                //- <ul class="nav nav-pills nav-fill">
-                //-     <li class="nav-item">
-                //-         <a class="nav-link active" aria-current="page" href="#">Active</a>
-                //-     </li>
-                //-     <li class="nav-item">
-                //-         <a class="nav-link" href="#">Much longer nav link</a>
-                //-     </li>
-                //-     <li class="nav-item">
-                //-         <a class="nav-link" href="#">Link</a>
-                //-     </li>
-                //-     <li class="nav-item">
-                //-         <a class="nav-link disabled" href="#" tabindex="-1">Disabled</a>
-                //-     </li>
-                //- </ul>
-                //- 
-                .pricing_tab-gameclub
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Much longer nav link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1">Disabled</a>
+                    </li>
+                </ul>
+                .pricing_tab.tab-gameclub
+                    .pricing_tab_photo
+                        img(src="../img/price_gameclub.jpg", alt="gameclub")
+                    .pricing_tab_info
+                        table 
+                            tr
+                                th Цена за 1 час игры
+                                th Пн-Чт
+                                th Пт
+                                th Сб
+                                th Вс
+                            tr 
+                                td  10:00 до 13:00
+                                td  -
+                                td  1600р
+                                td  1650р
+                                td  1650р
+                            tr 
+                                td  13:00 до 17:00
+                                td  -
+                                td  1600р
+                                td  1650р
+                                td  1650р
+                            tr 
+                                td  17:00 до 00:00
+                                td  -
+                                td  1600р
+                                td  1650р
+                                td  1650р
+                            tr 
+                                td  00:00 до 5:00
+                                td  -
+                                td  1600р
+                                td  1650р
+                                td  1650р
+                        p.pricing_descr lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem 
+                        p.pricing_time.
+                            ПН-ЧТ 10:00-21:00<br>
+                            ПТ 10:00-22:00<br>
+                            СБ-ВС 09:00-23:00<br>
+                            Звонки принимаются до 21:00.<br>
+                            После 21:00 - все игры проводятся только по предварительной записи в рабочее время центра.
+                        button ЗАБРОНИРОВАТЬ ПО ТЕЛЕФОНУ
+                .pricing_tab.tab-cafe
+                    .pricing_tab_photo
+                        img(src="../img/price_cafe.jpg", alt="gameclub")
+                    .pricing_tab_info
+                        h3 РЕСТОРАН 
+                        p.pricing_descr lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem 
+                        p 
+                            a(href="") ССЫЛКА НА МЕНЮ
+                        p.pricing_time.
+                            ПН-ЧТ 10:00-21:00<br>
+                            ПТ 10:00-22:00<br>
+                            СБ-ВС 09:00-23:00<br>
+                        h3 ИНТЕРНЕТ КАФЕ 
+                        p.pricing_descr lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem 
+                        p 
+                            a(href="") ССЫЛКА НА МЕНЮ
+                        p.pricing_time.
+                            ПН-ЧТ 10:00-21:00<br>
+                            ПТ 10:00-22:00<br>
+                            СБ-ВС 09:00-23:00<br>    
+                .pricing_tab.tab-bowling
                     .pricing_tab_photo
                         img(src="../img/placeholder13.jpg", alt="gameclub")
                     .pricing_tab_info
@@ -89,13 +151,29 @@ html(lang="ru")
                                 th Сб
                                 th Вс
                             tr 
-                                td С 10:00 до 13:00
-                                td 
-                                td
-                                td
+                                td  10:00 до 13:00
+                                td  -
+                                td  1600р
+                                td  1650р
+                                td  1650р
                             tr 
+                                td  13:00 до 17:00
+                                td  -
+                                td  1600р
+                                td  1650р
+                                td  1650р
                             tr 
-                            tr
+                                td  17:00 до 00:00
+                                td  -
+                                td  1600р
+                                td  1650р
+                                td  1650р
+                            tr 
+                                td  00:00 до 5:00
+                                td  -
+                                td  1600р
+                                td  1650р
+                                td  1650р
                         p.pricing_descr lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem 
                         p.pricing_time.
                             ПН-ЧТ 10:00-21:00<br>
@@ -104,9 +182,43 @@ html(lang="ru")
                             Звонки принимаются до 21:00.<br>
                             После 21:00 - все игры проводятся только по предварительной записи в рабочее время центра.
                         button ЗАБРОНИРОВАТЬ ПО ТЕЛЕФОНУ
-                .pricing_tab-cafe
-                .pricing_tab-bowling 
-                .pricing_tab-gameclub 
+                .pricing_tab.tab-kidsroom 
+                    .pricing_tab_photo
+                        img(src="../img/price_kidsroom.jpg", alt="gameclub")
+                    .pricing_tab_info
+                        table 
+                            tr
+                                th Цена за 1 час игры
+                                th Пн-Чт
+                                th Пт
+                                th Сб
+                                th Вс
+                            tr 
+                                td  10:00 до 13:00
+                                td  200р
+                                td  1600р
+                                td  1650р
+                                td  1650р
+                            tr 
+                                td  13:00 до 17:00
+                                td  200р
+                                td  1600р
+                                td  1650р
+                                td  1650р
+                            tr 
+                                td  17:00 до 00:00
+                                td  200р
+                                td  1600р
+                                td  1650р
+                                td  1650р
+                        p.pricing_descr lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem 
+                        p.pricing_time.
+                            ПН-ЧТ 10:00-21:00<br>
+                            ПТ 10:00-22:00<br>
+                            СБ-ВС 09:00-23:00<br>
+                            Звонки принимаются до 21:00.<br>
+                            После 21:00 - все игры проводятся только по предварительной записи в рабочее время центра.
+                        button ЗАБРОНИРОВАТЬ ПО ТЕЛЕФОНУ
         section.handy-info-wrapper
             .wrapper
                 h1(id="handyinfo") ПОЛЕЗНАЯ ИНФОРМАЦИЯ

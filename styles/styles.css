@@ -147,6 +147,51 @@ section .descrp {
   margin-top: 20px;
 }
 
+.pricing-wrapper .pricing_tab {
+  display: grid;
+  grid-template-columns: 580px 1fr;
+}
+.pricing-wrapper .pricing_tab_photo img {
+  width: 580px;
+  height: 480px;
+}
+.pricing-wrapper .pricing_tab_info {
+  padding: 15px;
+}
+.pricing-wrapper .pricing_tab_info .pricing_time {
+  font-size: 22px;
+}
+.pricing-wrapper .pricing_tab_info .pricing_descr {
+  font-size: 16px;
+}
+.pricing-wrapper table,
+.pricing-wrapper tr,
+.pricing-wrapper th,
+.pricing-wrapper td {
+  border-collapse: collapse;
+  border: 2px solid #FBB861;
+}
+.pricing-wrapper table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.pricing-wrapper td,
+.pricing-wrapper th {
+  padding: 10px;
+}
+.pricing-wrapper button {
+  border: none;
+  height: 56px;
+  width: 100%;
+  text-align: center;
+  background: #FBB861;
+  box-shadow: -5px 8px 0px 2px #5B93DC;
+  transition: 0.2s;
+}
+.pricing-wrapper button:hover {
+  transform: scale(1.05);
+}
+
 .handy-info_info-circles {
   display: flex;
   justify-content: space-around;
