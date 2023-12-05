@@ -147,6 +147,28 @@ section .descrp {
   margin-top: 20px;
 }
 
+.slider__items {
+  counter-reset: slide;
+}
+
+.slider__item {
+  counter-increment: slide;
+}
+
+.slider__item > div::before {
+  content: counter(slide);
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #fff;
+  font-style: italic;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.pricing-wrapper h1 {
+  margin-bottom: 60px;
+}
 .pricing-wrapper .pricing_tab {
   display: grid;
   grid-template-columns: 580px 1fr;
@@ -190,6 +212,42 @@ section .descrp {
 }
 .pricing-wrapper button:hover {
   transform: scale(1.05);
+}
+.pricing-wrapper .tab {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.pricing-wrapper .tab > input[type=radio] {
+  display: none;
+}
+.pricing-wrapper .pricing_tab {
+  display: none;
+  width: 100%;
+  margin-top: 60px;
+}
+.pricing-wrapper #tab-btn-1:checked ~ #tab_gameclub,
+.pricing-wrapper #tab-btn-2:checked ~ #tab_cafe,
+.pricing-wrapper #tab-btn-3:checked ~ #tab_bowling,
+.pricing-wrapper #tab-btn-4:checked ~ #tab_kidsroom {
+  display: grid;
+}
+.pricing-wrapper .tab > label {
+  display: block;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  text-decoration: none;
+  color: #000000;
+  border: 0;
+  background: 0 0;
+}
+.pricing-wrapper .tab > input[type=radio]:checked + label {
+  cursor: default;
+  color: #000000;
+  background-color: #0d6efd;
+  background: #FBB861;
+  box-shadow: -5px 8px 0px 2px #5B93DC;
 }
 
 .handy-info_info-circles {

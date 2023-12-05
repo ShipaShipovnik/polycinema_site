@@ -180,9 +180,31 @@ section {
 
 
 // МЕРОПРИЯТИЯ
+.slider__items {
+    counter-reset: slide;
+  }
+
+  .slider__item {
+    counter-increment: slide;
+  }
+
+  .slider__item>div::before {
+    content: counter(slide);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bold;
+  }
 
 //ЦЕНЫ
 .pricing-wrapper {
+    h1 {
+        margin-bottom: 60px;
+    }
+
     .pricing_tab {
         display: grid;
         grid-template-columns: 580px 1fr;
@@ -197,10 +219,12 @@ section {
 
     .pricing_tab_info {
         padding: 15px;
-        .pricing_time{
+
+        .pricing_time {
             font-size: 22px;
         }
-        .pricing_descr{
+
+        .pricing_descr {
             font-size: 16px;
         }
     }
@@ -212,9 +236,10 @@ section {
         border-collapse: collapse;
         border: 2px solid #FBB861;
     }
-    table{
+
+    table {
         width: 100%;
-        margin-bottom:20px;
+        margin-bottom: 20px;
     }
 
     td,
@@ -231,8 +256,52 @@ section {
         box-shadow: -5px 8px 0px 2px #5B93DC;
         transition: 0.2s;
     }
+
     button:hover {
         transform: scale(1.05);
+    }
+
+    // 
+    .tab {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .tab>input[type="radio"] {
+        display: none;
+    }
+
+    .pricing_tab {
+        display: none;
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    #tab-btn-1:checked~#tab_gameclub,
+    #tab-btn-2:checked~#tab_cafe,
+    #tab-btn-3:checked~#tab_bowling,
+    #tab-btn-4:checked~#tab_kidsroom {
+        display: grid;
+    }
+
+    .tab>label {
+        display: block;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+        text-decoration: none;
+        color: #000000;
+        border: 0;
+        background: 0 0;
+    }
+
+    .tab>input[type="radio"]:checked+label {
+        cursor: default;
+        color: #000000;
+        background-color: #0d6efd;
+        background: #FBB861;
+        box-shadow: -5px 8px 0px 2px #5B93DC;
     }
 }
 
