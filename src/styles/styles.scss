@@ -432,7 +432,6 @@ section {
 @media (min-width:769px) and (max-width: 1024px) {
     .wrapper {
         width: 940px;
-        color: #0d6efd;
     }
 
     //ГЛАВНАЯ
@@ -491,6 +490,7 @@ section {
             }
         }
     }
+
     // О НАС
     .about-us-wrapper {
         img {
@@ -498,14 +498,16 @@ section {
             width: 937px;
         }
     }
+
     .cotacts-wrapper {
         h1 {
             margin-bottom: 70px;
         }
-    
+
         ul {
             width: 90%;
             margin: 0 20px;
+
             li {
                 margin-bottom: 15px;
             }
@@ -516,8 +518,6 @@ section {
 @media (min-width:481px) and (max-width: 768px) {
     .wrapper {
         width: 710px;
-        color: #fd0d7d;
-
     }
 
     // Главная
@@ -604,17 +604,19 @@ section {
     .about-us-wrapper {
         img {
             margin: 30px auto;
-            width:708px;
+            width: 708px;
         }
     }
+
     .cotacts-wrapper {
         h1 {
             margin-bottom: 70px;
         }
-    
+
         ul {
             width: 90%;
             margin: 0 20px;
+
             li {
                 margin-bottom: 15px;
             }
@@ -643,24 +645,52 @@ section {
             }
         }
     }
-    
+
 
 }
 
 @media (min-width:320px) and (max-width: 480px) {
     .wrapper {
         width: 430px;
-        color: #0dfd21;
     }
+
     .banner-wrap {
         height: 150px;
+
         .logo {
             margin-top: 16px;
             width: 234px;
         }
-    
+
     }
+
     // ГЛАВНАЯ
+    .main-menu-wrap {
+        background-color: #FBB861;
+
+        .main-menu {
+            display: block;
+            text-align: center;
+            justify-content: space-around;
+            height: auto;
+            padding: 5px 0;
+
+            li {
+                list-style-type: none;
+                margin-bottom: 10px;
+
+                a {
+                    font-size: 26px;
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+
+            li:hover {
+                background-color: #ffdbab;
+            }
+        }
+    }
 
     .pricing-wrapper {
         .pricing_tab {
@@ -718,26 +748,30 @@ section {
             transform: scale(1.1);
         }
     }
+
     // О НАС
     .about-us-wrapper {
         img {
             margin: 30px auto;
-            width:427px;
+            width: 427px;
         }
     }
+
     .cotacts-wrapper {
         h1 {
             margin-bottom: 70px;
         }
-    
+
         ul {
             width: 90%;
             margin: 0 20px;
+
             li {
                 margin-bottom: 15px;
             }
         }
     }
+
     //ФУТЕР
     footer {
         height: 1366px;
@@ -826,38 +860,42 @@ section {
 @media(max-width:320px) {
     .wrapper {
         width: 290px;
-        color: #fdf90d;
-
     }
+
     .banner-wrap {
         height: 150px;
+
         .logo {
             margin-top: 20px;
             width: 216px;
         }
-    
+
     }
-    // главная
+
+    // ГЛАВНАЯ
     .main-menu-wrap {
+        background-color: #FBB861;
+
         .main-menu {
-            display: flex;
-            flex-wrap: wrap;
+            display: block;
+            text-align: center;
             justify-content: space-around;
-            height: 100px;
-            padding-top: 20px;
+            height: auto;
+            padding: 5px 0;
 
             li {
-                font-size: 22px;
                 list-style-type: none;
+                margin-bottom: 10px;
 
                 a {
+                    font-size: 26px;
                     text-decoration: none;
                     color: black;
                 }
             }
 
             li:hover {
-                text-decoration: underline;
+                background-color: #ffdbab;
             }
         }
     }
@@ -973,22 +1011,25 @@ section {
     .about-us-wrapper {
         img {
             margin: 30px auto;
-            width:288px;
+            width: 288px;
         }
     }
+
     .cotacts-wrapper {
         h1 {
             margin-bottom: 70px;
         }
-    
+
         ul {
             width: 90%;
             margin: 0 20px;
+
             li {
                 margin-bottom: 15px;
             }
         }
     }
+
     // футер
     footer {
         height: 1297px;

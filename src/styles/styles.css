@@ -334,7 +334,6 @@ section .descrp {
 @media (min-width: 769px) and (max-width: 1024px) {
   .wrapper {
     width: 940px;
-    color: #0d6efd;
   }
   .pricing-wrapper .pricing_tab {
     display: grid;
@@ -386,7 +385,6 @@ section .descrp {
 @media (min-width: 481px) and (max-width: 768px) {
   .wrapper {
     width: 710px;
-    color: #fd0d7d;
   }
   .main-banner .main-banner__header {
     display: grid;
@@ -471,7 +469,6 @@ section .descrp {
 @media (min-width: 320px) and (max-width: 480px) {
   .wrapper {
     width: 430px;
-    color: #0dfd21;
   }
   .banner-wrap {
     height: 150px;
@@ -479,6 +476,28 @@ section .descrp {
   .banner-wrap .logo {
     margin-top: 16px;
     width: 234px;
+  }
+  .main-menu-wrap {
+    background-color: #FBB861;
+  }
+  .main-menu-wrap .main-menu {
+    display: block;
+    text-align: center;
+    justify-content: space-around;
+    height: auto;
+    padding: 5px 0;
+  }
+  .main-menu-wrap .main-menu li {
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+  .main-menu-wrap .main-menu li a {
+    font-size: 26px;
+    text-decoration: none;
+    color: black;
+  }
+  .main-menu-wrap .main-menu li:hover {
+    background-color: #ffdbab;
   }
   .pricing-wrapper .pricing_tab {
     display: grid;
@@ -604,7 +623,6 @@ section .descrp {
 @media (max-width: 320px) {
   .wrapper {
     width: 290px;
-    color: #fdf90d;
   }
   .banner-wrap {
     height: 150px;
@@ -613,23 +631,27 @@ section .descrp {
     margin-top: 20px;
     width: 216px;
   }
+  .main-menu-wrap {
+    background-color: #FBB861;
+  }
   .main-menu-wrap .main-menu {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    text-align: center;
     justify-content: space-around;
-    height: 100px;
-    padding-top: 20px;
+    height: auto;
+    padding: 5px 0;
   }
   .main-menu-wrap .main-menu li {
-    font-size: 22px;
     list-style-type: none;
+    margin-bottom: 10px;
   }
   .main-menu-wrap .main-menu li a {
+    font-size: 26px;
     text-decoration: none;
     color: black;
   }
   .main-menu-wrap .main-menu li:hover {
-    text-decoration: underline;
+    background-color: #ffdbab;
   }
   .main-banner-wrap .main-banner {
     height: 825px;
