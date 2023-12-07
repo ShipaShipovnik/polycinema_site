@@ -395,6 +395,7 @@ section {
 
     ul {
         margin-top: 125px;
+        margin-left: 30px;
 
         li {
             margin-bottom: 20px;
@@ -431,8 +432,10 @@ section {
 @media (min-width:769px) and (max-width: 1024px) {
     .wrapper {
         width: 940px;
+        color: #0d6efd;
     }
 
+    //ГЛАВНАЯ
     .pricing-wrapper {
         .pricing_tab {
             display: grid;
@@ -462,7 +465,6 @@ section {
         }
     }
 
-    // 
     .handy-info_info-circles {
 
         .handy-info__circle-block {
@@ -481,11 +483,57 @@ section {
         }
     }
 
+    // ИНФОМАЦИЯ
+    .howfind-wrapper {
+        .wrapper {
+            ul {
+                margin-left: 30px;
+            }
+        }
+    }
+    // О НАС
+    .about-us-wrapper {
+        img {
+            margin: 30px auto;
+            width: 937px;
+        }
+    }
+    .cotacts-wrapper {
+        h1 {
+            margin-bottom: 70px;
+        }
+    
+        ul {
+            width: 90%;
+            margin: 0 20px;
+            li {
+                margin-bottom: 15px;
+            }
+        }
+    }
 }
 
 @media (min-width:481px) and (max-width: 768px) {
     .wrapper {
         width: 710px;
+        color: #fd0d7d;
+
+    }
+
+    // Главная
+    .main-banner {
+        .main-banner__header {
+            display: grid;
+            justify-content: space-between;
+            align-items: center;
+            grid-template-columns: 2fr 1fr 2fr;
+
+            .logo {
+                width: 311px;
+            }
+
+
+        }
     }
 
     .pricing-wrapper {
@@ -522,7 +570,6 @@ section {
         }
     }
 
-    // 
     .handy-info_info-circles {
 
         .handy-info__circle-block {
@@ -544,21 +591,37 @@ section {
         }
     }
 
-    .main-banner {
-        .main-banner__header {
-            display: grid;
-            justify-content: space-between;
-            align-items: center;
-            grid-template-columns: 2fr 1fr 2fr;
-
-            .logo {
-                width: 311px;
+    // ИНФОРМАЦИЯ
+    .howfind-wrapper {
+        .wrapper {
+            ul {
+                margin-left: 30px;
             }
-
-
         }
     }
 
+    // О НАС
+    .about-us-wrapper {
+        img {
+            margin: 30px auto;
+            width:708px;
+        }
+    }
+    .cotacts-wrapper {
+        h1 {
+            margin-bottom: 70px;
+        }
+    
+        ul {
+            width: 90%;
+            margin: 0 20px;
+            li {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    // ФУТЕР   
     footer {
         height: 735px;
         font-size: 16px;
@@ -580,13 +643,24 @@ section {
             }
         }
     }
+    
 
 }
 
 @media (min-width:320px) and (max-width: 480px) {
     .wrapper {
         width: 430px;
+        color: #0dfd21;
     }
+    .banner-wrap {
+        height: 150px;
+        .logo {
+            margin-top: 16px;
+            width: 234px;
+        }
+    
+    }
+    // ГЛАВНАЯ
 
     .pricing-wrapper {
         .pricing_tab {
@@ -622,7 +696,6 @@ section {
         }
     }
 
-    // 
     .handy-info_info-circles {
         flex-wrap: wrap;
 
@@ -645,42 +718,27 @@ section {
             transform: scale(1.1);
         }
     }
-
-    .main-banner-wrap {
-        .main-banner {
-            height: 622px;
-
-            .main-banner__header {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 65PXfr 1fr;
-                gap: 0px 0px;
-                align-content: center;
-                grid-template-areas:
-                    "town numb"
-                    "logo logo";
-            }
-
-            a {
-                grid-area: logo;
-                text-align: center;
-
-                .logo {
-                    width: 311px;
-                }
-
-            }
-
-            #town {
-                grid-area: town;
-            }
-
-            #numb {
-                grid-area: numb;
+    // О НАС
+    .about-us-wrapper {
+        img {
+            margin: 30px auto;
+            width:427px;
+        }
+    }
+    .cotacts-wrapper {
+        h1 {
+            margin-bottom: 70px;
+        }
+    
+        ul {
+            width: 90%;
+            margin: 0 20px;
+            li {
+                margin-bottom: 15px;
             }
         }
     }
-
+    //ФУТЕР
     footer {
         height: 1366px;
         font-size: 16px;
@@ -768,7 +826,18 @@ section {
 @media(max-width:320px) {
     .wrapper {
         width: 290px;
+        color: #fdf90d;
+
     }
+    .banner-wrap {
+        height: 150px;
+        .logo {
+            margin-top: 20px;
+            width: 216px;
+        }
+    
+    }
+    // главная
     .main-menu-wrap {
         .main-menu {
             display: flex;
@@ -776,22 +845,23 @@ section {
             justify-content: space-around;
             height: 100px;
             padding-top: 20px;
-    
+
             li {
                 font-size: 22px;
                 list-style-type: none;
-    
+
                 a {
                     text-decoration: none;
                     color: black;
                 }
             }
-    
+
             li:hover {
                 text-decoration: underline;
             }
         }
     }
+
     .main-banner-wrap {
         .main-banner {
             height: 825px;
@@ -814,6 +884,7 @@ section {
             a {
                 grid-area: logo;
                 text-align: center;
+
                 .logo {
                     width: 300px;
                 }
@@ -874,7 +945,7 @@ section {
         }
     }
 
-    // 
+
     .handy-info_info-circles {
         flex-wrap: wrap;
 
@@ -898,6 +969,27 @@ section {
         }
     }
 
+    // О НАС
+    .about-us-wrapper {
+        img {
+            margin: 30px auto;
+            width:288px;
+        }
+    }
+    .cotacts-wrapper {
+        h1 {
+            margin-bottom: 70px;
+        }
+    
+        ul {
+            width: 90%;
+            margin: 0 20px;
+            li {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    // футер
     footer {
         height: 1297px;
         font-size: 16px;

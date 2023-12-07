@@ -312,6 +312,7 @@ section .descrp {
 }
 .howfind-wrapper ul {
   margin-top: 125px;
+  margin-left: 30px;
 }
 .howfind-wrapper ul li {
   margin-bottom: 20px;
@@ -333,6 +334,7 @@ section .descrp {
 @media (min-width: 769px) and (max-width: 1024px) {
   .wrapper {
     width: 940px;
+    color: #0d6efd;
   }
   .pricing-wrapper .pricing_tab {
     display: grid;
@@ -363,10 +365,37 @@ section .descrp {
   .handy-info_info-circles .handy-info__circle-block:hover {
     transform: scale(1.1);
   }
+  .howfind-wrapper .wrapper ul {
+    margin-left: 30px;
+  }
+  .about-us-wrapper img {
+    margin: 30px auto;
+    width: 937px;
+  }
+  .cotacts-wrapper h1 {
+    margin-bottom: 70px;
+  }
+  .cotacts-wrapper ul {
+    width: 90%;
+    margin: 0 20px;
+  }
+  .cotacts-wrapper ul li {
+    margin-bottom: 15px;
+  }
 }
 @media (min-width: 481px) and (max-width: 768px) {
   .wrapper {
     width: 710px;
+    color: #fd0d7d;
+  }
+  .main-banner .main-banner__header {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 2fr 1fr 2fr;
+  }
+  .main-banner .main-banner__header .logo {
+    width: 311px;
   }
   .pricing-wrapper .pricing_tab {
     display: grid;
@@ -405,14 +434,22 @@ section .descrp {
   .handy-info_info-circles .handy-info__circle-block:hover {
     transform: scale(1.1);
   }
-  .main-banner .main-banner__header {
-    display: grid;
-    justify-content: space-between;
-    align-items: center;
-    grid-template-columns: 2fr 1fr 2fr;
+  .howfind-wrapper .wrapper ul {
+    margin-left: 30px;
   }
-  .main-banner .main-banner__header .logo {
-    width: 311px;
+  .about-us-wrapper img {
+    margin: 30px auto;
+    width: 708px;
+  }
+  .cotacts-wrapper h1 {
+    margin-bottom: 70px;
+  }
+  .cotacts-wrapper ul {
+    width: 90%;
+    margin: 0 20px;
+  }
+  .cotacts-wrapper ul li {
+    margin-bottom: 15px;
   }
   footer {
     height: 735px;
@@ -434,6 +471,14 @@ section .descrp {
 @media (min-width: 320px) and (max-width: 480px) {
   .wrapper {
     width: 430px;
+    color: #0dfd21;
+  }
+  .banner-wrap {
+    height: 150px;
+  }
+  .banner-wrap .logo {
+    margin-top: 16px;
+    width: 234px;
   }
   .pricing-wrapper .pricing_tab {
     display: grid;
@@ -476,29 +521,19 @@ section .descrp {
   .handy-info_info-circles .handy-info__circle-block:hover {
     transform: scale(1.1);
   }
-  .main-banner-wrap .main-banner {
-    height: 622px;
+  .about-us-wrapper img {
+    margin: 30px auto;
+    width: 427px;
   }
-  .main-banner-wrap .main-banner .main-banner__header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 65PXfr 1fr;
-    gap: 0px 0px;
-    align-content: center;
-    grid-template-areas: "town numb" "logo logo";
+  .cotacts-wrapper h1 {
+    margin-bottom: 70px;
   }
-  .main-banner-wrap .main-banner a {
-    grid-area: logo;
-    text-align: center;
+  .cotacts-wrapper ul {
+    width: 90%;
+    margin: 0 20px;
   }
-  .main-banner-wrap .main-banner a .logo {
-    width: 311px;
-  }
-  .main-banner-wrap .main-banner #town {
-    grid-area: town;
-  }
-  .main-banner-wrap .main-banner #numb {
-    grid-area: numb;
+  .cotacts-wrapper ul li {
+    margin-bottom: 15px;
   }
   footer {
     height: 1366px;
@@ -569,6 +604,14 @@ section .descrp {
 @media (max-width: 320px) {
   .wrapper {
     width: 290px;
+    color: #fdf90d;
+  }
+  .banner-wrap {
+    height: 150px;
+  }
+  .banner-wrap .logo {
+    margin-top: 20px;
+    width: 216px;
   }
   .main-menu-wrap .main-menu {
     display: flex;
@@ -664,6 +707,20 @@ section .descrp {
   }
   .handy-info_info-circles .handy-info__circle-block:hover {
     transform: scale(1.1);
+  }
+  .about-us-wrapper img {
+    margin: 30px auto;
+    width: 288px;
+  }
+  .cotacts-wrapper h1 {
+    margin-bottom: 70px;
+  }
+  .cotacts-wrapper ul {
+    width: 90%;
+    margin: 0 20px;
+  }
+  .cotacts-wrapper ul li {
+    margin-bottom: 15px;
   }
   footer {
     height: 1297px;
