@@ -656,12 +656,47 @@ section {
 
     .banner-wrap {
         height: 150px;
+    }
 
-        .logo {
-            margin-top: 16px;
-            width: 234px;
+    .main-banner-wrap {
+        .main-banner {
+            height: 825px;
+
+            #descrp {
+                font-size: 20px;
+            }
+
+            .main-banner__header {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 40px 1fr;
+                gap: 10px 0px;
+                grid-template-areas:
+                    "town numb"
+                    "logo logo";
+            }
+
+            a {
+                grid-area: logo;
+                text-align: center;
+
+                .logo {
+                    width: 300px;
+                }
+
+            }
+
+            #town {
+                text-align: left;
+                grid-area: town;
+            }
+
+            #numb {
+                justify-self: center;
+                text-align: right;
+                grid-area: numb;
+            }
         }
-
     }
 
     // ГЛАВНАЯ

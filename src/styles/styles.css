@@ -473,9 +473,34 @@ section .descrp {
   .banner-wrap {
     height: 150px;
   }
-  .banner-wrap .logo {
-    margin-top: 16px;
-    width: 234px;
+  .main-banner-wrap .main-banner {
+    height: 825px;
+  }
+  .main-banner-wrap .main-banner #descrp {
+    font-size: 20px;
+  }
+  .main-banner-wrap .main-banner .main-banner__header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 1fr;
+    gap: 10px 0px;
+    grid-template-areas: "town numb" "logo logo";
+  }
+  .main-banner-wrap .main-banner a {
+    grid-area: logo;
+    text-align: center;
+  }
+  .main-banner-wrap .main-banner a .logo {
+    width: 300px;
+  }
+  .main-banner-wrap .main-banner #town {
+    text-align: left;
+    grid-area: town;
+  }
+  .main-banner-wrap .main-banner #numb {
+    justify-self: center;
+    text-align: right;
+    grid-area: numb;
   }
   .main-menu-wrap {
     background-color: #FBB861;
